@@ -1,4 +1,5 @@
-﻿namespace Raceway.ViewModels
+﻿
+namespace Raceway.Models.ViewModels
 {
     public class ManageUserRolesViewModel
     {

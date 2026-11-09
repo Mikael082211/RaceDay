@@ -1,8 +1,9 @@
- using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Raceway.Data;
 using Raceway.Models;
 using Raceway.Models.Interface;
+using Raceway.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<IProfileImageService, ProfileImageService>();
+builder.Services.AddSingleton<Raceway.Services.IBlobStorageService, Raceway.Services.BlobStorageService>();
 
 builder.Services.AddControllersWithViews();
 
@@ -29,6 +31,7 @@ using (var scope = app.Services.CreateScope())
 
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     var roles = new[] { "Admin", "Organiser", "Participant" };
+
 
     foreach(var role in roles)
     {
@@ -76,6 +79,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

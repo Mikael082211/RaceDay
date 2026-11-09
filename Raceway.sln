@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceDay", "RaceDay.csproj", "{2031E396-8B2C-427D-8F06-472A9025CE13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raceway", "Raceway.csproj", "{2031E396-8B2C-427D-8F06-472A9025CE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raceway.Tests", "..\Raceway.Tests\Raceway.Tests.csproj", "{7435984B-B975-4505-BF84-D40A9A692C59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2031E396-8B2C-427D-8F06-472A9025CE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2031E396-8B2C-427D-8F06-472A9025CE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2031E396-8B2C-427D-8F06-472A9025CE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7435984B-B975-4505-BF84-D40A9A692C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7435984B-B975-4505-BF84-D40A9A692C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7435984B-B975-4505-BF84-D40A9A692C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7435984B-B975-4505-BF84-D40A9A692C59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

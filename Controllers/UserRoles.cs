@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Raceway.Models;
 using Raceway.Models.ViewModels;
-using Raceway.ViewModels;
 
 namespace Raceway.Controllers
 {
